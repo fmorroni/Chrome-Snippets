@@ -1,3 +1,4 @@
+// Run this from a devtools within a devtools (open one devtools and then ctrl+shift+i from within that one)
 if (document.getElementById('snippetsDownload') === null) {
     let snipsLink = document.createElement('a');
     snipsLink.id = 'snippetsDownload';
