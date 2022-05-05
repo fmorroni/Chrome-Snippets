@@ -1,6 +1,7 @@
 // Run this from a devtools within a devtools (open one devtools and then ctrl+shift+i from within that one)
-if (document.getElementById('snippetsDownload') === null) {
-    let snipsLink = document.createElement('a');
+let snipsLink = document.getElementById('snippetsDownload');
+if (snipsLink === null) {
+    snipsLink = document.createElement('a');
     snipsLink.id = 'snippetsDownload';
     snipsLink.download = 'chrome_snippets_json.txt';
     snipsLink.innerHTML = 'Download snippets';    
